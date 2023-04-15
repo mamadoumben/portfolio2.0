@@ -40,7 +40,7 @@ span{
 #Apropos{
     height: 730px;
     margin-top: 0px;
-    padding-top: 120px;
+    padding-top: 170px;
 }
 .image{
     border: 2px solid black;
@@ -66,9 +66,10 @@ span{
 
 #Competence{
     height: 730px;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 #Realisation{
+    height: 730px;
     padding-top: 100px;
 }
 
@@ -81,7 +82,8 @@ span{
     opacity: 1;
 }
 #contact{
-    margin-top: 180px;
+    height: 600px;
+    margin-top: 250px;
    
 }
 footer{
@@ -90,3 +92,44 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+#Experience{
+    margin-top: 80px;
+    padding-top: 100px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: scroll;
+    margin: 10px;
+    width: 520px;
+    height: 520px;
+    transition: all 0.5s ease-in-out !important;
+    
+}
+.image-container:hover .overlay {
+    transform: translate(0, -100%);
+    opacity: 1 !important;
+}
+.overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+    transform: translate(0, 0);
+    opacity: 0 !important;
+}
