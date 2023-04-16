@@ -26,7 +26,6 @@ span{
     animation-delay: 2s;
     animation-iteration-count: infinite;
    
-
 }
 @keyframes mbengue{
     0%{
@@ -47,30 +46,46 @@ span{
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     height: 500px;
-    
-   
+    width: 450px;
+    box-shadow: 0px 6px 38px -1px rgba(0,0,0,0.73);
+-webkit-box-shadow: 0px 6px 38px -1px rgba(0,0,0,0.73);
+-moz-box-shadow: 0px 6px 38px -1px rgba(0,0,0,0.73);
 }
 .image img{
+    
     height: 500px;
     width: 450px;
     
 }
 .propos{
     width: 400px;
+    padding: 20px;
+    border-radius: 15px;
 }
-#Experience{
-    margin-top: 180px;
-    padding-top: 100px;
+.propos:hover{
+    box-shadow: 0px 6px 38px -1px rgba(0,0,0,0.73);
+-webkit-box-shadow: 0px 6px 38px -1px rgba(0,0,0,0.73);
+-moz-box-shadow: 0px 6px 38px -1px rgba(0,0,0,0.73);
+}
 
-} 
+#Experience{
+   
+    height: 1000px;
+    margin-top: 400px !important;
+    
+}
 
 #Competence{
-    height: 730px;
+    height: 700px;
+    margin-top: 200px;
     padding-top: 200px;
 }
 #Realisation{
-    height: 730px;
+   
+    height: 1090px;
+    margin-top: 250px;
     padding-top: 100px;
+   
 }
 
 .card-text {
@@ -81,26 +96,18 @@ span{
 .card:hover .card-text {
     opacity: 1;
 }
-#contact{
-    height: 600px;
-    margin-top: 250px;
-   
+.progress-bar{
+   animation: exe 5s normal;
+
 }
-footer{
-    margin-top: 20px;
+@keyframes exe{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 #Experience{
     margin-top: 80px;
     padding-top: 100px;
@@ -113,7 +120,10 @@ footer{
     margin: 10px;
     width: 520px;
     height: 520px;
-    transition: all 0.5s ease-in-out !important;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 22px 19px 18px 3px rgba(0,0,0,0.68);
+    -webkit-box-shadow: 22px 19px 18px 3px rgba(0,0,0,0.68);
+    -moz-box-shadow: 22px 19px 18px 3px rgba(0,0,0,0.68)!important;
     
 }
 .image-container:hover .overlay {
@@ -132,4 +142,46 @@ footer{
     transition: all 0.5s ease-in-out;
     transform: translate(0, 0);
     opacity: 0 !important;
+}
+#Reference{
+   
+    height: 1000px;
+}
+.ref-container{
+    margin-top: 100px;
+    padding-top: 100px;
+    width: 100%;
+}
+.ref-container img{
+    width: 100%;
+    height: 400px;
+    padding: 50px;
+}
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: 1.5s ease-in-out;
+}
+.inner:hover img{
+    transform: scale(1.5);
+}
+#Contact{
+    border: 2px solid rgb(12, 1, 1);
+    height: 900px;
+    width: 100%;
+
+}
+.cont-container{
+    width: 70%;
+    height: 400px;
+    margin-top: 50px;
+   padding-top: 80px;
+   
+}
+footer{
+    border: 2px solid blue;
+    width: 100%;
+    margin-top: 150px;
+   
 }
